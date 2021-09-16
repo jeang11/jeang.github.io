@@ -118,7 +118,7 @@ figcaption:hover, figure:hover, footer:hover, header:hover, hgroup:hover, main:h
 .contents .section_1 { position:relative; text-align:center; }
 .contents .section_1 .paragraph { position:absolute; top:22%; left:50%; transform:translateX(-50%); width:100%; z-index:10; }
 .contents .section_1 .paragraph .item { margin:0 auto; max-width:1296px; }
-.contents .section_2_bg { padding-top:121px; height:2492px; background:url("../image/section_2_bg.jpg") center 0 no-repeat; background-size:1920px 2492px; }
+.contents .section_2_bg { padding-top:121px; height:1830px; background:url("../image/section_2_bg.jpg") center 0 no-repeat; background-size:1920px 1830px; }
 .contents .section_2 .item { position:relative; margin:0 auto; width:1058px; height:1058px; background:url("../image/item_bg.png") 0 0 no-repeat; background-size:1058px 1058px; }
 .contents .section_2 .item dl { position:absolute; top:297px; left:809px; font-size:32px; line-height:48px; font-weight:800; color:#C5D5E2; }
 .contents .section_2 .item dl dd { position:relative; margin-top:212px; margin-left:-278px;}
@@ -131,8 +131,8 @@ figcaption:hover, figure:hover, footer:hover, header:hover, hgroup:hover, main:h
 .canvas { height:100%; left:50%; transform:translateX(-50%); position:absolute; top:0; width:100%; background:#000; z-index:5; }
 
 /****************************** Animation ******************************/
-.planet { position:absolute; top:87px; left:50%; margin-left:-419px; animation: planet 30s linear infinite; transform-origin: 50% 50%; }
-.planet_2 { position:absolute; top:448px; left:50%; margin-left:-99px; animation: planet_2 60s linear infinite; transform-origin: 50% 50%; }
+.planet { position:absolute; top:-65px; left:50%; margin-left:-419px; animation: planet 30s linear infinite; transform-origin: 50% 50%; }
+.planet_2 { position:absolute; top:291px; left:50%; margin-left:-99px; animation: planet_2 60s linear infinite; transform-origin: 50% 50%; }
 .planet img { width:1514px; height:1603px; }
 .planet_2 img { width:875px; height:874px; }
 
@@ -143,10 +143,10 @@ figcaption:hover, figure:hover, footer:hover, header:hover, hgroup:hover, main:h
 /****************************** TABLET, MOBILE ******************************/
 @media all and (max-width:1400px) {
 	.contents .section_2 .item { width:80%; height:80%; background:url("../image/item_bg.png") 0 0 no-repeat; background-size:100%; }
-	.contents .section_2_bg { padding-top:38px; height:1993px; background:url("../image/section_2_bg.jpg") center 0 no-repeat; background-size:auto 1993px; }
-	.planet { top:94px; margin-left:-344px; }
+	.contents .section_2_bg { padding-top:38px; height:1536px; background:url("../image/section_2_bg.jpg") center 0 no-repeat; background-size:auto 1536px; }
+	.planet { top:-50px; margin-left:-348px; }
 	.planet img { width:1211px; height:1282px; }
-	.planet_2 { top:361px; margin-left:-53px; }
+	.planet_2 { top:277px; margin-left:-70px; }
 	.planet_2 img { width:700px; height:700px; }
 	.footer { padding:22px 24px; }
 	.video, .canvas { width:auto; }
