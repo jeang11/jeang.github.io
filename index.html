@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+	<link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/fullpage.css" />
+	<script type="text/javascript" src="resources/js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+<div id="fullpage" class="wrap">
+	<div class="header">
+		<h1 class="logo"><img src="resources/image/logo.png" alt="Krust" /></h1>
+	</div>
+
+    <div class="contents">
+		<section class="section section_1" id="section0">
+			<div class="paragraph">
+				<div class="item">
+					<p class="fb">Welcome To Krust</p>
+					<p class="title">Krust, creative destruction for a new universe</p>
+					<p>We execute company building, A&D, and strategic investment focusing on projects which contribute to the Klaytn ecosystem</p>
+				</div>
+			</div>
+			<video class="video" width="auto" height="100%" muted data-autoplay playsinline loop>
+				<source src="resources/mp4/science.mp4" type="video/mp4">
+				 <source src="resources/mp4/science.ogg" type="video/ogg">
+			</video>
+			<canvas class="canvas"></canvas>
+		</section>
+		<section class="section section_2 tal" id="section1">
+			<div class="section_2_bg">
+				<span class="planet" id="planet"><img src="resources/image/planet.png" alt="" /></span>
+				<span class="planet_2" id="planet_2"><img src="resources/image/planet_2.png" alt="" /></span>
+				<div class="paragraph">
+					<p class="title ty_2">What Do You Do<br />Krust?</p>
+					<p>클레이튼의 생태계 확장과 카카오 글로벌 신규 비지니스을 담당합니다.클레이튼의 생태계 확장과 카카오 글로벌 신규 비지니스을 담당합니다.<br />
+					클레이튼의 생태계 확장과 카카오 글로벌 신규 비지니스을 담당합니다.</p>
+					<p class="title ty_2 cmgt">What Do You Do<br />Krust?</p>
+				</div>
+				<div class="item">
+					<dl class="blind">
+						<dt>Krust></dt>
+						<dd>Company<br />Building</dd>
+						<dd>A&D<br /><small>(Acquisition & Delevelopment)</small></dd>
+						<dd>Strategic<br />Investment</dd>
+					</dl>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<span class="logo"><img src="resources/image/logo_2.png" alt="Krust" /></span>
+				<span class="copy">©Krust Inc. All rights reserved</span>
+			</div>
+		</section>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="resources/js/scrolloverflow.js"></script>
+<script type="text/javascript" src="resources/js/fullpage.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+		anchors: ['firstPage', 'secondPage'],
+		sectionsColor: ['#080a0b', '#000'],
+		scrollOverflow: true
+    });
+</script>
+<script src="resources/js/canvas-video-player.js"></script>
+<script>
+
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (isIOS) {
+
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.video',
+        canvasSelector: '.canvas',
+        timelineSelector: false,
+        autoplay: true,
+        makeLoop: true,
+        pauseOnClick: false,
+        audio: false
+    });
+
+}else {
+
+    // Use HTML5 video
+    document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+}   
+
+</script>
+</body>
+</html>
