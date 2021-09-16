@@ -108,7 +108,8 @@ figcaption:hover, figure:hover, footer:hover, header:hover, hgroup:hover, main:h
 .header { position:absolute; top:0; left:0; right:0; padding:0 24px; height:80px; z-index:10; }
 .header .logo { margin:30px auto; max-width:1280px; }
 .header .logo img { width:75px; height:20px; }
-.footer { padding:22px 330px; height:80px; background-color:#243746; z-index:10; }
+.footer { padding:22px 0; height:80px; background-color:#243746; z-index:10; }
+.footer .item { margin:0 auto; max-width:1280px; }
 .footer .copy { float:right; margin-top:7px; font-size:12px; font-weight:400; color:#fff; }
 .footer .logo img { width:60px; height:16px; }
 
